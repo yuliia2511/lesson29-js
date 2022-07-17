@@ -18,15 +18,12 @@ alert( 'Кількість шоколадок:' + chocolate + ', Здача:' + 
 
 let character = prompt( 'Введіть будь-яке тризначне число:' );
 character.toString();
-[ ...character.toString() ];
-[ ...character.toString() ].reverse();
-[ ...character.toString() ].reverse().join('');
 alert([ ...character.toString() ].reverse().join('') );
 
 let investment = prompt( 'Сума вкладу:' );
-let InterestRate = 5;
+let interestRate = 5;
 let days = 60;
-let deposit = ( ((investment * InterestRate * days) / 365) / 100 );
+let deposit = ( ((investment * interestRate * days) / 365) / 100 );
 alert( 'Процентний дохід за вкладом складає:' + deposit );
 
 alert( 2 || 0 || 3 ); // 2 - перше істинне значення
